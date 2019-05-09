@@ -1,6 +1,8 @@
 ﻿namespace Shop.Web
 {
     using Data;
+    using Data.Entities;
+    using Helpers;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Http;
@@ -9,7 +11,6 @@
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
-    using Shop.Web.Data.Entities;
 
     public class Startup
     {
@@ -42,8 +43,12 @@
 
             services.AddTransient<SeedDb>();
 
-            services.AddScoped<IRepository, Repository>();
-                       
+            services.AddScoped<IProductRepository, ProductRepository>();
+
+            services.AddScoped<ICountryRepository, CountryRepository>();
+
+            services.AddScoped<IUserHelper, UserHelper>();
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
