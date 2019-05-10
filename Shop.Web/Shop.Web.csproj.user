@@ -11,5 +11,6 @@
     <WebStackScaffolding_DbContextTypeFullName>Shop.Web.Data.DataContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
+    <NameOfLastUsedPublishProfile>ShopGuzmo - Web Deploy1</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

@@ -24,15 +24,17 @@
         {
             await this.context.Database.EnsureCreatedAsync();
 
-            var user = await this.userHelper.GetUserByEmailAsync("jzuluaga55@gmail.com");
+            // Add user
+            var user = await this.userHelper.GetUserByEmailAsync("guzmojeison@gmail.com");
             if (user == null)
             {
                 user = new User
                 {
-                    FirstName = "Juan",
-                    LastName = "Zuluaga",
-                    Email = "jzuluaga55@gmail.com",
-                    UserName = "jzuluaga55@gmail.com"
+                    FirstName = "Jeison",
+                    LastName = "Guzman",
+                    Email = "guzmojeison@gmail.com",
+                    UserName = "guzmojeison@gmail.com",
+                    PhoneNumber = "3196564994"
                 };
 
                 var result = await this.userHelper.AddUserAsync(user, "123456");
@@ -42,11 +44,12 @@
                 }
             }
 
+            // Add products
             if (!this.context.Products.Any())
             {
-                this.AddProduct("First Product", user);
-                this.AddProduct("Second Product", user);
-                this.AddProduct("Third Product", user);
+                this.AddProduct("iPhone X", user);
+                this.AddProduct("Magic Mouse", user);
+                this.AddProduct("iWatch Series 4", user);
                 await this.context.SaveChangesAsync();
             }
         }
@@ -56,7 +59,7 @@
             this.context.Products.Add(new Product
             {
                 Name = name,
-                Price = this.random.Next(100),
+                Price = this.random.Next(1000),
                 IsAvailabe = true,
                 Stock = this.random.Next(100),
                 User = user

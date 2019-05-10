@@ -11,7 +11,7 @@
         public UserHelper(UserManager<User> userManager)
         {
             this.userManager = userManager;
-        }
+        } 
 
         public async Task<IdentityResult> AddUserAsync(User user, string password)
         {
