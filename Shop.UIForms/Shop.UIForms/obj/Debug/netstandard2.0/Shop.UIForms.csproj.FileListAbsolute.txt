@@ -7,6 +7,6 @@ C:\Project\Shop\Shop.UIForms\Shop.UIForms\obj\Debug\netstandard2.0\MainPage.xaml
 C:\Project\Shop\Shop.UIForms\Shop.UIForms\obj\Debug\netstandard2.0\Shop.UIForms.csproj.CoreCompileInputs.cache
 C:\Project\Shop\Shop.UIForms\Shop.UIForms\obj\Debug\netstandard2.0\Shop.UIForms.AssemblyInfoInputs.cache
 C:\Project\Shop\Shop.UIForms\Shop.UIForms\obj\Debug\netstandard2.0\Shop.UIForms.AssemblyInfo.cs
-C:\Project\Shop\Shop.UIForms\Shop.UIForms\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Project\Shop\Shop.UIForms\Shop.UIForms\obj\Debug\netstandard2.0\Shop.UIForms.dll
 C:\Project\Shop\Shop.UIForms\Shop.UIForms\obj\Debug\netstandard2.0\Shop.UIForms.pdb
+C:\Project\Shop\Shop.UIForms\Shop.UIForms\obj\Debug\netstandard2.0\View\LoginPage.xaml.g.cs

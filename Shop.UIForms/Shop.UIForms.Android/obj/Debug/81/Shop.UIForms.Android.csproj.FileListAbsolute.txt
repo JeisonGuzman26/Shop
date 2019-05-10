@@ -214,3 +214,6 @@ C:\Project\Shop\Shop.UIForms\Shop.UIForms.Android\obj\Debug\81\stamp\_CopyInterm
 C:\Project\Shop\Shop.UIForms\Shop.UIForms.Android\obj\Debug\81\stamp\_CopyMdbFiles.stamp
 C:\Project\Shop\Shop.UIForms\Shop.UIForms.Android\obj\Debug\81\stamp\_CopyPdbFiles.stamp
 C:\Project\Shop\Shop.UIForms\Shop.UIForms.Android\obj\Debug\81\stamp\_ResolveLibraryProjectImports.stamp
+C:\Project\Shop\Shop.UIForms\Shop.UIForms.Android\obj\Debug\81\android\assets\machine.config
+C:\Project\Shop\Shop.UIForms\Shop.UIForms.Android\obj\Debug\81\stamp\_CompileToDalvik.stamp
+C:\Project\Shop\Shop.UIForms\Shop.UIForms.Android\obj\Debug\81\stamp\_GeneratePackageManagerJava.stamp

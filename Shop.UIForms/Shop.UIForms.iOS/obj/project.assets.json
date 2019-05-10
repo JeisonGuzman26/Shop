@@ -2,6 +2,17 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "MvvmLightLibsStd10/5.4.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
+        },
+        "runtime": {
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -150,6 +161,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MvvmLightLibsStd10": "5.4.1.1",
           "Xamarin.Essentials": "1.0.1",
           "Xamarin.Forms": "3.6.0.264807"
         },
@@ -162,6 +174,17 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "MvvmLightLibsStd10/5.4.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
+        },
+        "runtime": {
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -310,6 +333,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MvvmLightLibsStd10": "5.4.1.1",
           "Xamarin.Essentials": "1.0.1",
           "Xamarin.Forms": "3.6.0.264807"
         },
@@ -322,6 +346,17 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "MvvmLightLibsStd10/5.4.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
+        },
+        "runtime": {
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -470,6 +505,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MvvmLightLibsStd10": "5.4.1.1",
           "Xamarin.Essentials": "1.0.1",
           "Xamarin.Forms": "3.6.0.264807"
         },
@@ -482,6 +518,17 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "MvvmLightLibsStd10/5.4.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
+        },
+        "runtime": {
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -630,6 +677,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MvvmLightLibsStd10": "5.4.1.1",
           "Xamarin.Essentials": "1.0.1",
           "Xamarin.Forms": "3.6.0.264807"
         },
@@ -643,6 +691,45 @@
     }
   },
   "libraries": {
+    "MvvmLightLibsStd10/5.4.1.1": {
+      "sha512": "zU9KXgq8dfnzxxOvvAVtasbhaQGoDlTr8Pw2AjZ1NB905GQljrxqkgh3jo5/47Vux5duw3/faUgcZjdfomGvFw==",
+      "type": "package",
+      "path": "mvvmlightlibsstd10/5.4.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Platform.XML",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Platform.dll",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/monoandroid1/GalaSoft.MvvmLight.XML",
+        "lib/monoandroid1/GalaSoft.MvvmLight.dll",
+        "lib/monoandroid1/GalaSoft.MvvmLight.pdb",
+        "lib/net45/GalaSoft.MvvmLight.Platform.dll",
+        "lib/net45/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/net45/GalaSoft.MvvmLight.Platform.xml",
+        "lib/net45/GalaSoft.MvvmLight.dll",
+        "lib/net45/GalaSoft.MvvmLight.pdb",
+        "lib/net45/GalaSoft.MvvmLight.xml",
+        "lib/net45/System.Windows.Interactivity.dll",
+        "lib/netstandard1.0/GalaSoft.MvvmLight.XML",
+        "lib/netstandard1.0/GalaSoft.MvvmLight.dll",
+        "lib/netstandard1.0/GalaSoft.MvvmLight.pdb",
+        "lib/uap10.0/GalaSoft.MvvmLight.Platform.dll",
+        "lib/uap10.0/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/uap10.0/GalaSoft.MvvmLight.Platform.pri",
+        "lib/uap10.0/GalaSoft.MvvmLight.Platform.xml",
+        "lib/uap10.0/GalaSoft.MvvmLight.dll",
+        "lib/uap10.0/GalaSoft.MvvmLight.pdb",
+        "lib/uap10.0/GalaSoft.MvvmLight.xml",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.XML",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.XML",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.dll",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.pdb",
+        "mvvmlightlibsstd10.5.4.1.1.nupkg.sha512",
+        "mvvmlightlibsstd10.nuspec"
+      ]
+    },
     "System.Numerics.Vectors/4.5.0": {
       "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
