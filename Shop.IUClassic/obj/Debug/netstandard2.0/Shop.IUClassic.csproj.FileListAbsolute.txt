@@ -1,9 +1,9 @@
 C:\Project\Shop\Shop.IUClassic\bin\Debug\netstandard2.0\Shop.IUClassic.deps.json
 C:\Project\Shop\Shop.IUClassic\bin\Debug\netstandard2.0\Shop.IUClassic.dll
 C:\Project\Shop\Shop.IUClassic\bin\Debug\netstandard2.0\Shop.IUClassic.pdb
-C:\Project\Shop\Shop.IUClassic\obj\Debug\netstandard2.0\Shop.IUClassic.csprojAssemblyReference.cache
 C:\Project\Shop\Shop.IUClassic\obj\Debug\netstandard2.0\Shop.IUClassic.csproj.CoreCompileInputs.cache
 C:\Project\Shop\Shop.IUClassic\obj\Debug\netstandard2.0\Shop.IUClassic.AssemblyInfoInputs.cache
 C:\Project\Shop\Shop.IUClassic\obj\Debug\netstandard2.0\Shop.IUClassic.AssemblyInfo.cs
 C:\Project\Shop\Shop.IUClassic\obj\Debug\netstandard2.0\Shop.IUClassic.dll
 C:\Project\Shop\Shop.IUClassic\obj\Debug\netstandard2.0\Shop.IUClassic.pdb
+C:\Project\Shop\Shop.IUClassic\obj\Debug\netstandard2.0\Shop.IUClassic.csprojAssemblyReference.cache

@@ -10,3 +10,8 @@ C:\Project\Shop\Shop.UIForms\Shop.UIForms\obj\Debug\netstandard2.0\Shop.UIForms.
 C:\Project\Shop\Shop.UIForms\Shop.UIForms\obj\Debug\netstandard2.0\Shop.UIForms.dll
 C:\Project\Shop\Shop.UIForms\Shop.UIForms\obj\Debug\netstandard2.0\Shop.UIForms.pdb
 C:\Project\Shop\Shop.UIForms\Shop.UIForms\obj\Debug\netstandard2.0\View\LoginPage.xaml.g.cs
+C:\Project\Shop\Shop.UIForms\Shop.UIForms\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Project\Shop\Shop.UIForms\Shop.UIForms\obj\Debug\netstandard2.0\View\ProductsPage.xaml.g.cs
+C:\Project\Shop\Shop.UIForms\Shop.UIForms\bin\Debug\netstandard2.0\Shop.Common.dll
+C:\Project\Shop\Shop.UIForms\Shop.UIForms\bin\Debug\netstandard2.0\Shop.Common.pdb
+C:\Project\Shop\Shop.UIForms\Shop.UIForms\obj\Debug\netstandard2.0\Shop.UIForms.csproj.CopyComplete

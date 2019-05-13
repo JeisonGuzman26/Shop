@@ -17,7 +17,6 @@ C:\Project\Shop\Shop.IUClassic.Android\bin\Debug\Xamarin.Essentials.dll.mdb
 C:\Project\Shop\Shop.IUClassic.Android\obj\Debug\81\MonoAndroid,Version=v8.1.AssemblyAttributes.cs
 C:\Project\Shop\Shop.IUClassic.Android\obj\Debug\81\build.props
 C:\Project\Shop\Shop.IUClassic.Android\obj\Debug\81\adb.props
-C:\Project\Shop\Shop.IUClassic.Android\obj\Debug\81\Shop.IUClassic.Android.csprojAssemblyReference.cache
 C:\Project\Shop\Shop.IUClassic.Android\obj\Debug\81\libraryimports.cache.stamp
 C:\Project\Shop\Shop.IUClassic.Android\obj\Debug\81\resourcepaths.cache
 C:\Project\Shop\Shop.IUClassic.Android\obj\Debug\81\res.flag
