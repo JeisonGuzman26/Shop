@@ -5,7 +5,6 @@ C:\Project\Shop\Shop.Web\bin\Debug\netcoreapp2.1\Shop.Web.dll
 C:\Project\Shop\Shop.Web\bin\Debug\netcoreapp2.1\Shop.Web.pdb
 C:\Project\Shop\Shop.Web\bin\Debug\netcoreapp2.1\Shop.Web.Views.dll
 C:\Project\Shop\Shop.Web\bin\Debug\netcoreapp2.1\Shop.Web.Views.pdb
-C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Shop.Web.csprojAssemblyReference.cache
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Shop.Web.csproj.CoreCompileInputs.cache
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Shop.Web.RazorAssemblyInfo.cache
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Shop.Web.RazorAssemblyInfo.cs
@@ -35,3 +34,6 @@ C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Products\Delete.g.c
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Products\Details.g.cshtml.cs
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Products\Edit.g.cshtml.cs
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Products\Index.g.cshtml.cs
+C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.g.cshtml.cs
+C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Shop.Web.csprojAssemblyReference.cache
+C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.g.cshtml.cs

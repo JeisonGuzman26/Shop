@@ -1,16 +1,19 @@
 ﻿namespace Shop.Web.Controllers
 {
-    using Data;
-    using Data.Entities;
-    using Helpers;
-    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.EntityFrameworkCore;
-    using Shop.Web.Models;
     using System;
     using System.IO;
     using System.Linq;
     using System.Threading.Tasks;
+    using Data;
+    using Data.Entities;
+    using Helpers;
+    using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.EntityFrameworkCore;
+    using Models;
 
+
+    [Authorize]
     public class ProductsController : Controller
     {
         private readonly IProductRepository productRepository;
@@ -30,7 +33,7 @@
         }
 
         // GET: Products/Details/5
-        public async Task <IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {

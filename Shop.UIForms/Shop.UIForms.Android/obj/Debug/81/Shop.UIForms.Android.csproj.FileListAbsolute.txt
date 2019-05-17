@@ -254,6 +254,3 @@ C:\Project\Shop\Shop.UIForms\Shop.UIForms.Android\obj\Debug\81\linksrc\Shop.Comm
 C:\Project\Shop\Shop.UIForms\Shop.UIForms.Android\obj\Debug\81\linksrc\Shop.Common.pdb
 C:\Project\Shop\Shop.UIForms\Shop.UIForms.Android\obj\Debug\81\android\assets\Shop.Common.dll
 C:\Project\Shop\Shop.UIForms\Shop.UIForms.Android\obj\Debug\81\android\assets\Shop.Common.pdb
-C:\Project\Shop\Shop.UIForms\Shop.UIForms.Android\obj\Debug\81\android\assets\machine.config
-C:\Project\Shop\Shop.UIForms\Shop.UIForms.Android\obj\Debug\81\stamp\_CompileToDalvik.stamp
-C:\Project\Shop\Shop.UIForms\Shop.UIForms.Android\obj\Debug\81\stamp\_GeneratePackageManagerJava.stamp

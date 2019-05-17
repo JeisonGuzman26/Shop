@@ -143,3 +143,4 @@ C:\Project\Shop\Shop.IUClassic.Android\obj\Debug\81\stamp\_CopyIntermediateAssem
 C:\Project\Shop\Shop.IUClassic.Android\obj\Debug\81\stamp\_CopyMdbFiles.stamp
 C:\Project\Shop\Shop.IUClassic.Android\obj\Debug\81\stamp\_CopyPdbFiles.stamp
 C:\Project\Shop\Shop.IUClassic.Android\obj\Debug\81\stamp\_ResolveLibraryProjectImports.stamp
+C:\Project\Shop\Shop.IUClassic.Android\obj\Debug\81\Shop.IUClassic.Android.csprojAssemblyReference.cache
