@@ -13,7 +13,7 @@
 
         [Required]
         [DataType(DataType.EmailAddress)]
-        public string UserNamer { get; set; }
+        public string UserName { get; set; }
 
         [Required]
         [MinLength(6)]
