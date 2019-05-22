@@ -7,6 +7,7 @@
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link href="~/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment exclude="Development">
@@ -38,21 +39,21 @@
             <div class="navbar-collapse collapse">
 
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                    <li><a asp-area="" asp-controller="Products" asp-action="Index">Products</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index" class="btn btn-light"><i class="fa fa-home"></i>  Home </a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About" class="btn btn-light"><i class="fa fa-question"></i>  About </a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact" class="btn btn-light"><i class="fa fa-phone"></i>  Contact </a></li>
+                    <li><a asp-area="" asp-controller="Products" asp-action="Index" class="btn btn-light"><i class="fa fa-dollar"></i>  Products </a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
                     @if (this.User.Identity.IsAuthenticated)
                     {
-                        <li><a asp-area="" asp-controller="Account" asp-action="ChangeUser">@this.User.Identity.Name</a></li>
-                        <li><a asp-area="" asp-controller="Account" asp-action="Logout">Logout</a></li>
+                        <li><a asp-area="" asp-controller="Account" asp-action="ChangeUser" class="btn btn-light"><i class="fa fa-wrench"></i> @this.User.Identity.Name</a></li>
+                        <li><a asp-area="" asp-controller="Account" asp-action="Logout" class="btn btn-light"><i class="fa fa-user-times"></i>  Logout</a></li>
                     }
                     else
                     {
-                        <li><a asp-area="" asp-controller="Account" asp-action="Login">Login</a></li>
+                        <li><a asp-area="" asp-controller="Account" asp-action="Login" class="btn btn-light"><i class="fa fa-user"></i> Login </a></li>
                     }
                 </ul>
 
