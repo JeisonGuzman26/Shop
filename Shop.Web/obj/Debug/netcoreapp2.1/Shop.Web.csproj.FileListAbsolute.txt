@@ -39,3 +39,6 @@ C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Shop.Web.Views.pdb
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Shop.Web.dll
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Shop.Web.pdb
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Shop.Web.csproj.CopyComplete
+C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\NotAuthorized.g.cshtml.cs
+C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Products\ProductNotFound.g.cshtml.cs
+C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Error404.g.cshtml.cs

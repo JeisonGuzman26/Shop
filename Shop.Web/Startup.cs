@@ -1,7 +1,9 @@
 ﻿namespace Shop.Web
 {
+    using System.Text;
     using Data;
     using Data.Entities;
+    using Data.Repository;
     using Helpers;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
@@ -12,7 +14,6 @@
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.IdentityModel.Tokens;
-    using System.Text;
 
     public class Startup
     {
@@ -60,6 +61,8 @@
 
             services.AddScoped<IProductRepository, ProductRepository>();
 
+            services.AddScoped<IOrderResitory, OrderRepository>();
+
             services.AddScoped<ICountryRepository, CountryRepository>();
 
             services.AddScoped<IUserHelper, UserHelper>();
@@ -71,8 +74,14 @@
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.ConfigureApplicationCookie(option =>
+            {
+                option.LoginPath = "/Account/NotAuthorized";
+                option.AccessDeniedPath = "/Account/NotAuthorized";
+            });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -88,6 +97,7 @@
                 app.UseHsts();
             }
 
+            app.UseStatusCodePagesWithReExecute("/error/{0}");
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseAuthentication();

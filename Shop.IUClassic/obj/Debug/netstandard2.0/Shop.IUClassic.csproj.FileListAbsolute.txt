@@ -6,4 +6,3 @@ C:\Project\Shop\Shop.IUClassic\obj\Debug\netstandard2.0\Shop.IUClassic.AssemblyI
 C:\Project\Shop\Shop.IUClassic\obj\Debug\netstandard2.0\Shop.IUClassic.AssemblyInfo.cs
 C:\Project\Shop\Shop.IUClassic\obj\Debug\netstandard2.0\Shop.IUClassic.dll
 C:\Project\Shop\Shop.IUClassic\obj\Debug\netstandard2.0\Shop.IUClassic.pdb
-C:\Project\Shop\Shop.IUClassic\obj\Debug\netstandard2.0\Shop.IUClassic.csprojAssemblyReference.cache
