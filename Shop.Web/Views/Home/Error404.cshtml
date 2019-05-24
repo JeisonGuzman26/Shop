@@ -2,22 +2,26 @@
     ViewData["Title"] = "Error404";
 
 }
-<br />
-<br />
 
 <section class="col-md-12">
-    <img src="~/images/Error-404.jpg" style="width:70%; height:auto"/>
-    <h2>Sorry, page not found </h2>
+    <article class="row">
+        <div class="col-md-12" style="min-height: 87vh; width: 100%">
+            <div class="container-image" style="padding: 25px; position: absolute; z-index: 1000;">
+                <img src="~/images/Error-404.jpg" style="width:100%; height:auto" />
+            </div>
 
-    <ul class="nav navbar-nav" style="margin-bottom:50px">
-        <li ><a asp-controller="Home" asp-action="Index" class="btn btn-success"><i class="fa fa-home"></i>  Home </a></li>
-        <li style="margin-left: 10px;"><a asp-controller="Home" asp-action="Contact" class="btn btn-success"><i class="fa fa-phone"></i>  Contact </a></li>
-        <li style="margin-left: 10px;"><a asp-controller="Products" asp-action="Index" class="btn btn-success"><i class="fa fa-dollar"></i>  Products </a></li>
-    </ul>
-
-
-
+            <div class="body-404" style="z-index: 1000; position: absolute; padding: 100px; padding-top: 400px;">
+                <h2>Sorry, page not found </h2>
+                <ul class="nav navbar-nav" style="margin-bottom:50px">
+                    <li><a asp-controller="Home" asp-action="Index" class="btn btn-success"><i class="fa fa-home"></i>  Home </a></li>
+                    <li style="margin-left: 10px;"><a asp-controller="Home" asp-action="Contact" class="btn btn-success"><i class="fa fa-phone"></i>  Contact </a></li>
+                    <li style="margin-left: 10px;"><a asp-controller="Products" asp-action="Index" class="btn btn-success"><i class="fa fa-dollar"></i>  Products </a></li>
+                </ul>
+            </div>
+        </div>
+    </article>
 </section>
+
 
 
 
