@@ -1,6 +1,6 @@
 ﻿namespace Shop.Web.Data.Repository
 {
-
+    using System;
     using System.Linq;
     using System.Threading.Tasks;
     using Entities;
@@ -13,7 +13,8 @@
         private readonly DataContext context;
         private readonly IUserHelper userHelper;
 
-        public OrderRepository(DataContext context, IUserHelper userHelper) : base(context)
+        public OrderRepository(DataContext context,
+            IUserHelper userHelper) : base(context)
         {
             this.context = context;
             this.userHelper = userHelper;
@@ -29,15 +30,20 @@
 
             if (await this.userHelper.IsUserInRoleAsync(user, "Admin"))
             {
-                return this.context.Orders.Include(o => o.Items)
+                return this.context.Orders
+                    .Include(o => o.User)
+                    .Include(o => o.Items)
                     .ThenInclude(i => i.Product)
                     .OrderByDescending(o => o.OrderDate);
             }
-            return this.context.Orders.Include(o => o.Items)
+
+            return this.context.Orders
+                .Include(o => o.Items)
                 .ThenInclude(i => i.Product)
                 .Where(o => o.User == user)
                 .OrderByDescending(o => o.OrderDate);
         }
+
 
         public async Task<IQueryable<OrderDetailTemp>> GetDetailTempsAsync(string userName)
         {
@@ -67,32 +73,95 @@
                 return;
             }
 
-            var orderDetailItem = await this.context.OrderDetailTemps.
-                Where(odt => odt.User == user && odt.Product == product).
-                FirstOrDefaultAsync();
-            if (orderDetailItem == null)
+            var orderDetailTemp = await this.context.OrderDetailTemps
+                .Where(odt => odt.User == user && odt.Product == product)
+                .FirstOrDefaultAsync();
+            if (orderDetailTemp == null)
             {
-                orderDetailItem = new OrderDetailTemp
+                orderDetailTemp = new OrderDetailTemp
                 {
                     Price = product.Price,
                     Product = product,
                     Quantity = model.Quantity,
-                    User = user
+                    User = user,
                 };
 
-                this.context.OrderDetailTemps.Add(orderDetailItem);
+                this.context.OrderDetailTemps.Add(orderDetailTemp);
             }
             else
             {
-                orderDetailItem.Quantity += model.Quantity;
+                orderDetailTemp.Quantity += model.Quantity;
+                this.context.OrderDetailTemps.Update(orderDetailTemp);
+            }
 
-                
+            await this.context.SaveChangesAsync();
+        }
+
+        public async Task ModifyOrderDetailTempQuantityAsync(int id, double quantity)
+        {
+            var orderDetailTemp = await this.context.OrderDetailTemps.FindAsync(id);
+            if (orderDetailTemp == null)
+            {
+                return;
+            }
+
+            orderDetailTemp.Quantity += quantity;
+            if (orderDetailTemp.Quantity > 0)
+            {
+                this.context.OrderDetailTemps.Update(orderDetailTemp);
+                await this.context.SaveChangesAsync();
             }
         }
 
-        public Task ModifyOrderDetailTempQuantityAsync(int id, double quantity)
+        public async Task DelecteDetailTempAsync(int id)
         {
-            throw new System.NotImplementedException();
+            var orderDetailTemp = await this.context.OrderDetailTemps.FindAsync(id);
+            if (orderDetailTemp == null)
+            {
+                return;
+            }
+
+            this.context.OrderDetailTemps.Remove(orderDetailTemp);
+            await this.context.SaveChangesAsync();
         }
+
+        public async Task<bool> ConfirmOrderAsync(string userName)
+        {
+            var user = await this.userHelper.GetUserByEmailAsync(userName);
+            if (user == null)
+            {
+                return false;
+            }
+
+            var orderTemps = await this.context.OrderDetailTemps
+                .Include(o => o.Product)
+                .Where(o => o.User == user)
+                .ToListAsync();
+
+            if (orderTemps == null || orderTemps.Count == 0)
+            {
+                return false;
+            }
+
+            var details = orderTemps.Select(o => new OrderDetail
+            {
+                Price = o.Price,
+                Product = o.Product,
+                Quantity = o.Quantity
+            }).ToList();
+
+            var order = new Order
+            {
+                OrderDate = DateTime.UtcNow,
+                User = user,
+                Items = details
+            };
+
+            this.context.Orders.Add(order);
+            this.context.OrderDetailTemps.RemoveRange(orderTemps);
+            await this.context.SaveChangesAsync();
+            return true;
+        }
+
     }
 }

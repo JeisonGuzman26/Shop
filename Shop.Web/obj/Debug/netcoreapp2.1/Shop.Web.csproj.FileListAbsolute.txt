@@ -44,3 +44,4 @@ C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Shop.Web.csproj.CopyComplete
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Shop.Web.csprojAssemblyReference.cache
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Orders\Create.g.cshtml.cs
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Orders\Index.g.cshtml.cs
+C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Orders\AddProduct.g.cshtml.cs
