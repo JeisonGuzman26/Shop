@@ -23,6 +23,9 @@ C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.csht
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Error404.g.cshtml.cs
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Orders\AddProduct.g.cshtml.cs
+C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Orders\Create.g.cshtml.cs
+C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Orders\Index.g.cshtml.cs
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Products\Create.g.cshtml.cs
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Products\Delete.g.cshtml.cs
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Products\Details.g.cshtml.cs
@@ -42,6 +45,3 @@ C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Shop.Web.dll
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Shop.Web.pdb
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Shop.Web.csproj.CopyComplete
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Shop.Web.csprojAssemblyReference.cache
-C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Orders\Create.g.cshtml.cs
-C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Orders\Index.g.cshtml.cs
-C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Orders\AddProduct.g.cshtml.cs
