@@ -226,12 +226,12 @@ WriteAttributeValue("", 755, Url.Content(Model.ImageUrl), 755, 28, false);
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n    \r\n    ");
             EndContext();
             BeginContext(1610, 290, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "124b342e6df440b69b9ee3bf3821ed2a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "25e83b3cbc634672bd869dae465fe096", async() => {
                 BeginContext(1636, 10, true);
                 WriteLiteral("\r\n        ");
                 EndContext();
                 BeginContext(1646, 36, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "786a67d3de7e48b58dbf36edf21b4233", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f0bb1940085c4c55a4418ce6018546ad", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -256,7 +256,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\r\n        <button type=\"submit\" class=\"btn btn-danger\"><i class=\"fa fa-trash\"></i> Delete</button>\r\n        ");
                 EndContext();
                 BeginContext(1790, 97, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "70f356c0ec84410da971789fe5246594", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9a94db19fedc46b097636f5628a20c28", async() => {
                     BeginContext(1836, 47, true);
                     WriteLiteral("<i class=\"fa fa-chevron-left\"></i> Back to List");
                     EndContext();
