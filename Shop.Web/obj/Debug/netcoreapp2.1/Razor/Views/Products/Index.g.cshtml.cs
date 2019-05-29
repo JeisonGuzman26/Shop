@@ -70,7 +70,7 @@ using Shop.Web.Models;
             WriteLiteral("\r\n<h2>Index</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(124, 62, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d290a80d11e94cf4b064947298e1e33b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1df96299c76841499682cb8d5847ae91", async() => {
                 BeginContext(172, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -258,7 +258,7 @@ WriteAttributeValue("", 1369, Url.Content(item.ImageUrl), 1369, 27, false);
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(1951, 104, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1d6a7641fe7848f199083c13c28e6910", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9a13bb5f4e5a4790bde1f871859c4595", async() => {
                 BeginContext(2020, 31, true);
                 WriteLiteral("<i class=\"fa fa-edit\"></i> Edit");
                 EndContext();
@@ -294,7 +294,7 @@ WriteAttributeValue("", 1369, Url.Content(item.ImageUrl), 1369, 27, false);
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(2075, 109, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8bc20242b755457c93bf7118af20fea8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f68b73d3cbb94047ae7283c1096dfe89", async() => {
                 BeginContext(2144, 36, true);
                 WriteLiteral("<i class=\"fa fa-search\"></i> Details");
                 EndContext();
@@ -330,7 +330,7 @@ WriteAttributeValue("", 1369, Url.Content(item.ImageUrl), 1369, 27, false);
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(2204, 109, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7a96951df1374edcbcae5cea47ca6533", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ed492a7980fa40f4810d1e99d6ac28cd", async() => {
                 BeginContext(2275, 34, true);
                 WriteLiteral("<i class=\"fa fa-trash\"></i> Delete");
                 EndContext();

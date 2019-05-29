@@ -6,8 +6,9 @@
     {
         public int Id { get; set; }
 
-        [Display(Name ="Delivery date")]
-        [DisplayFormat(DataFormatString = "{0:yyyy/mm/dd hh:mm tt", ApplyFormatInEditMode = true)]
+        [Display(Name = "Delivery date")]
+        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime DeliveryDate { get; set; }
     }
+
 }

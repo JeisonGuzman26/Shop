@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\node_modules\jquery\**" />
+    <Content Remove="wwwroot\node_modules\jquery\**" />
+    <EmbeddedResource Remove="wwwroot\node_modules\jquery\**" />
+    <None Remove="wwwroot\node_modules\jquery\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="wwwroot\node_modules\bootstrap-datepicker\dist\css\bootstrap-datepicker.css" />
     <Content Include="wwwroot\node_modules\bootstrap-datepicker\dist\css\bootstrap-datepicker.min.css" />
     <Content Include="wwwroot\node_modules\bootstrap-datepicker\dist\css\bootstrap-datepicker.standalone.css" />

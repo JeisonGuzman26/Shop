@@ -39,6 +39,7 @@
 
             base.OnModelCreating(modelBuilder);
         }
+        public DbSet<City> Cities { get; set; }
 
     }
 

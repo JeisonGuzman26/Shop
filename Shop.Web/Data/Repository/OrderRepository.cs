@@ -170,16 +170,18 @@
             {
                 return;
             }
+
             order.DeliveryDate = model.DeliveryDate;
             this.context.Orders.Update(order);
             await this.context.SaveChangesAsync();
-
         }
 
         public async Task<Order> GetOrdersAsync(int id)
         {
             return await this.context.Orders.FindAsync(id);
         }
+
+
 
     }
 }
