@@ -132,5 +132,51 @@
             return View(country);
         }
 
+        public async Task<IActionResult> Edit (int ? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var country = await this.countryRepository.GetByIdAsync(id.Value);
+            if (country == null)
+            {
+                return NotFound();
+            }
+
+            return View(country);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit (Country country)
+        {
+            if (this.ModelState.IsValid)
+            {
+                await this.countryRepository.UpdateAsync(country);
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(country);
+        }
+
+        public async Task<IActionResult> Delete (int ? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var country = await this.countryRepository.GetByIdAsync(id.Value);
+            if (country == null)
+            {
+                return NotFound();
+            }
+
+            await this.countryRepository.DeleteAsync(country);
+            return RedirectToAction(nameof(Index));
+        }
+
     }
 }

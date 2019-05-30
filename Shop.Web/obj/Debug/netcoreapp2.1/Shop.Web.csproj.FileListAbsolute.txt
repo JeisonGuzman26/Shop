@@ -45,4 +45,10 @@ C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Shop.Web.dll
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Shop.Web.pdb
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Shop.Web.csproj.CopyComplete
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Orders\Deliver.g.cshtml.cs
+C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Countries\Index.g.cshtml.cs
 C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Shop.Web.csprojAssemblyReference.cache
+C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Countries\Create.g.cshtml.cs
+C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Countries\Edit.g.cshtml.cs
+C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Countries\Details.g.cshtml.cs
+C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Countries\AddCity.g.cshtml.cs
+C:\Project\Shop\Shop.Web\obj\Debug\netcoreapp2.1\Razor\Views\Countries\EditCity.g.cshtml.cs

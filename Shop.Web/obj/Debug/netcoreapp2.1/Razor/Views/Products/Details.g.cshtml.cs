@@ -223,7 +223,7 @@ WriteAttributeValue("", 709, Url.Content(Model.ImageUrl), 709, 28, false);
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(1573, 105, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3e9f002b504c3d8962aee4ee4c2128", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9802416d4ca54741941cacea3a83249e", async() => {
                 BeginContext(1643, 31, true);
                 WriteLiteral("<i class=\"fa fa-edit\"></i> Edit");
                 EndContext();
@@ -259,7 +259,7 @@ WriteAttributeValue("", 709, Url.Content(Model.ImageUrl), 709, 28, false);
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(1686, 97, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7c99c70bdc3640618246a0d343a5da09", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b144cd87ef714f69a406c49690acfe35", async() => {
                 BeginContext(1732, 47, true);
                 WriteLiteral("<i class=\"fa fa-chevron-left\"></i> Back to List");
                 EndContext();
