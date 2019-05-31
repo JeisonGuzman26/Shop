@@ -1,13 +1,13 @@
 ﻿namespace Shop.Web.Controllers
 {
+    using System.Threading.Tasks;
+    using Data;
+    using Data.Entities;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
-    using Shop.Web.Data;
-    using Shop.Web.Data.Entities;
-    using Shop.Web.Models;
-    using System.Threading.Tasks;
+    using Models;
 
-    [Authorize(Roles ="Admin")]
+    [Authorize(Roles = "Admin")]
     public class CountriesController : Controller
     {
         private readonly ICountryRepository countryRepository;
@@ -17,7 +17,7 @@
             this.countryRepository = countryRepository;
         }
 
-        public async Task<IActionResult> DeleteCity(int ? id)
+        public async Task<IActionResult> DeleteCity(int? id)
         {
             if (id == null)
             {
@@ -34,7 +34,7 @@
             return this.RedirectToAction($"Details/{countryId}");
         }
 
-        public async Task<IActionResult> EditCity(int ? id)
+        public async Task<IActionResult> EditCity(int? id)
         {
             if (id == null)
             {
@@ -55,8 +55,8 @@
         {
             if (this.ModelState.IsValid)
             {
-                var countryId = await this.countryRepository.UpdateCityAsycn(city);
-                if (countryId !=0)
+                var countryId = await this.countryRepository.UpdateCityAsync(city);
+                if (countryId != 0)
                 {
                     return this.RedirectToAction($"Details/{countryId}");
                 }
@@ -65,7 +65,7 @@
             return this.View(city);
         }
 
-        public async Task<IActionResult> AddCity(int ? id)
+        public async Task<IActionResult> AddCity(int? id)
         {
             if (id == null)
             {
@@ -90,22 +90,23 @@
                 await this.countryRepository.AddCityAsync(model);
                 return this.RedirectToAction($"Details/{model.CountryId}");
             }
+
             return this.View(model);
         }
 
         public IActionResult Index()
         {
-            return View(this.countryRepository.GetContriesWithCities());
+            return View(this.countryRepository.GetCountriesWithCities());
         }
 
-        public async Task<IActionResult> Details(int ? id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var country = await this.countryRepository.GetCountriesWithCitiesAsync(id.Value);
+            var country = await this.countryRepository.GetCountryWithCitiesAsync(id.Value);
             if (country == null)
             {
                 return NotFound();
@@ -132,7 +133,7 @@
             return View(country);
         }
 
-        public async Task<IActionResult> Edit (int ? id)
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
             {
@@ -144,15 +145,14 @@
             {
                 return NotFound();
             }
-
             return View(country);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit (Country country)
+        public async Task<IActionResult> Edit(Country country)
         {
-            if (this.ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 await this.countryRepository.UpdateAsync(country);
                 return RedirectToAction(nameof(Index));
@@ -161,7 +161,7 @@
             return View(country);
         }
 
-        public async Task<IActionResult> Delete (int ? id)
+        public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
             {
@@ -177,6 +177,5 @@
             await this.countryRepository.DeleteAsync(country);
             return RedirectToAction(nameof(Index));
         }
-
     }
 }

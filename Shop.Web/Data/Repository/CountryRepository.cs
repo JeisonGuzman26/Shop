@@ -1,10 +1,10 @@
 ﻿namespace Shop.Web.Data
 {
-    using Entities;
-    using Microsoft.EntityFrameworkCore;
-    using Shop.Web.Models;
     using System.Linq;
     using System.Threading.Tasks;
+    using Entities;
+    using Microsoft.EntityFrameworkCore;
+    using Models;
 
     public class CountryRepository : GenericRepository<Country>, ICountryRepository
     {
@@ -17,7 +17,7 @@
 
         public async Task AddCityAsync(CityViewModel model)
         {
-            var country = await this.GetCountriesWithCitiesAsync(model.CountryId);
+            var country = await this.GetCountryWithCitiesAsync(model.CountryId);
             if (country == null)
             {
                 return;
@@ -41,19 +41,14 @@
             return country.Id;
         }
 
-        public async Task<City> GetCityAsync(int id)
-        {
-            return await this.context.Cities.FindAsync(id);
-        }
-
-        public IQueryable GetContriesWithCities()
+        public IQueryable GetCountriesWithCities()
         {
             return this.context.Countries
                 .Include(c => c.Cities)
                 .OrderBy(c => c.Name);
         }
 
-        public async Task<Country> GetCountriesWithCitiesAsync(int id)
+        public async Task<Country> GetCountryWithCitiesAsync(int id)
         {
             return await this.context.Countries
                 .Include(c => c.Cities)
@@ -61,7 +56,7 @@
                 .FirstOrDefaultAsync();
         }
 
-        public async Task<int> UpdateCityAsycn(City city)
+        public async Task<int> UpdateCityAsync(City city)
         {
             var country = await this.context.Countries.Where(c => c.Cities.Any(ci => ci.Id == city.Id)).FirstOrDefaultAsync();
             if (country == null)
@@ -73,5 +68,11 @@
             await this.context.SaveChangesAsync();
             return country.Id;
         }
+
+        public async Task<City> GetCityAsync(int id)
+        {
+            return await this.context.Cities.FindAsync(id);
+        }
     }
+
 }

@@ -4,7 +4,6 @@
     ViewData["Title"] = "Details";
 }
 
-
 <h2>Details</h2>
 
 <div>
@@ -12,11 +11,11 @@
     <h4>Country</h4>
 
     <hr />
+
     <dl class="dl-horizontal">
 
         <dt>
             @Html.DisplayNameFor(model => model.Name)
-
         </dt>
 
         <dd>
@@ -30,21 +29,13 @@
 <div>
     <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning"><i class="fa fa-edit"></i> Edit</a>
     <a asp-action="AddCity" asp-route-id="@Model.Id" class="btn btn-info"><i class="fa fa-plus-circle"></i> Add City</a>
-    <a asp-action="Index" class="btn btn-success"><i class="fa fa-chevron-left"></i> Back to list</a>
+    <a asp-action="Index" class="btn btn-success"><i class="fa fa-chevron-left"></i> Back to List</a>
 </div>
 
-
-
-                    
-                </tr>
-            }
-        </tbody>
-    </table>
-}
 <h4>Cities</h4>
 @if (Model.Cities == null || Model.Cities.Count == 0)
 {
-    <h5> No cities added yet</h5>
+    <h5>No cities added yet</h5>
 }
 else
 {
@@ -55,11 +46,10 @@ else
             <tr>
 
                 <th>
+
                     @Html.DisplayNameFor(model => model.Cities.FirstOrDefault().Name)
                 </th>
-
                 <th></th>
-
             </tr>
 
         </thead>
@@ -68,18 +58,17 @@ else
 
             @foreach (var item in Model.Cities.OrderBy(c => c.Name))
             {
-            <tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
 
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-  
-                <td id="@item.Id">
-                    <a asp-action="EditCity" asp-route-id="@item.Id" class="btn btn-warning"><i class="fa fa-edit"></i> Edit</a>
-                    <a asp-action="DeleteCity" asp-route-id="@item.Id" class="btn btn-danger" id="btnDelete"><i class="fa fa-trash"></i> Delete</a>
-                </td>
+                    <td id="@item.Id">
+                        <a asp-action="EditCity" asp-route-id="@item.Id" class="btn btn-warning"><i class="fa fa-edit"></i> Edit</a>
+                        <a asp-action="DeleteCity" asp-route-id="@item.Id" class="btn btn-danger" id="btnDelete"><i class="fa fa-trash"></i> Delete</a>
+                    </td>
 
-            </tr>
+                </tr>
             }
 
         </tbody>
@@ -87,38 +76,30 @@ else
     </table>
 }
 
-
 <div id="deleteDialog" class="modal fade">
-
     <div class="modal-dialog modal-sm">
-
         <div class="modal-content">
-
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><i class="fa fa-window-close"></i></button>
-                <h4 class="modal-title"> Delete</h4>
+                <h4 class="modal-title">Delete</h4>
             </div>
-
             <div class="modal-body">
-                <p> Do you want delete this city?</p>
+                <p>Do you want to delete the city?</p>
             </div>
-
             <div class="modal-footer">
-                <button type="button" class="btn btn-danger" id="btnYesDelete"> Delete</button>
-                <button type="button" class="btn btn-success" id="btnNoDelete"> No</button>
+                <button type="button" class="btn btn-danger" id="btnYesDelete">Delete</button>
+                <button type="button" class="btn btn-success" id="btnNoDelete">No</button>
             </div>
-
         </div>
-
     </div>
-
 </div>
 
-@section Scripts{
+@section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 
     <script type="text/javascript">
         $(document).ready(function () {
+
             var id = 0;
 
             $('a[id*=btnDelete]').click(function () {
@@ -133,11 +114,11 @@ else
                 return false;
             });
 
+
             $("#btnYesDelete").click(function () {
                 window.location.href = '/Countries/DeleteCity/' + id;
             });
 
         });
-
     </script>
 }
